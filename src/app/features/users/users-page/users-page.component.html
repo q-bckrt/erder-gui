@@ -1,0 +1,19 @@
+<div class="row">
+
+  <div class="col-9">
+    <app-user-list></app-user-list>
+  </div>
+
+  <div class="col-3">
+    @if (isCreateMode) {
+      <app-user-create></app-user-create>
+    } @else if (!userId) {
+      <!-- to determine -->
+    } @else if (!isEditMode) {
+      <app-user-details></app-user-details>
+    } @else {
+      <app-user-update></app-user-update>
+    }
+  </div>
+
+</div>
