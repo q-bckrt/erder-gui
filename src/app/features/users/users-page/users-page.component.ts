@@ -4,7 +4,8 @@ import { UserListComponent} from '../user-list/user-list.component';
 import { UserDetailsComponent } from '../user-details/user-details.component';
 import { UserCreateComponent } from '../user-create/user-create.component';
 import { UserUpdateComponent } from '../user-update/user-update.component';
-import {ActivatedRoute} from '@angular/router';
+import {UserDefaultViewComponent} from '../user-default-view/user-default-view.component';
+import {ActivatedRoute, RouterLink} from '@angular/router';
 
 @Component({
   standalone: true,
@@ -14,7 +15,9 @@ import {ActivatedRoute} from '@angular/router';
     UserListComponent,
     UserDetailsComponent,
     UserCreateComponent,
-    UserUpdateComponent
+    UserUpdateComponent,
+    UserDefaultViewComponent,
+    RouterLink
   ],
   templateUrl: './users-page.component.html',
   styleUrl: './users-page.component.css'

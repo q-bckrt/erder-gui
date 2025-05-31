@@ -1,5 +1,11 @@
-<div class="row">
+<div class="row mt-5 mx-5">
 
+  <div class="d-flex justify-content-between mt-3 mb-3 col-9">
+    <span class="h2"> Products </span>
+    <button type="button" class="btn btn-outline-warning text-justify mx-4" routerLink="/items/create">
+      Create
+    </button>
+  </div>
   <div class="col-9">
     <app-item-list></app-item-list>
   </div>
@@ -8,7 +14,7 @@
     @if (isCreateMode) {
       <app-item-create></app-item-create>
     } @else if (!itemId) {
-      <!-- to determine -->
+      <app-item-default-view></app-item-default-view>
     } @else if (!isEditMode) {
       <app-item-details></app-item-details>
     } @else {

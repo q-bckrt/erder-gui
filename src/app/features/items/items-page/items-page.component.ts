@@ -1,10 +1,11 @@
 import {Component, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import {ActivatedRoute, RouterLink} from '@angular/router';
 import { ItemListComponent } from '../item-list/item-list.component';
 import { ItemDetailsComponent } from '../item-details/item-details.component';
 import { ItemCreateComponent } from '../item-create/item-create.component';
 import { ItemUpdateComponent } from '../item-update/item-update.component';
+import { ItemDefaultViewComponent } from '../item-default-view/item-default-view.component';
 
 @Component({
   standalone: true,
@@ -15,6 +16,8 @@ import { ItemUpdateComponent } from '../item-update/item-update.component';
     ItemDetailsComponent,
     ItemCreateComponent,
     ItemUpdateComponent,
+    ItemDefaultViewComponent,
+    RouterLink
   ],
   templateUrl: './items-page.component.html',
   styleUrl: './items-page.component.css'

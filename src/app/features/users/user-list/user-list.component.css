@@ -1,0 +1,93 @@
+/* Style for all table cells to truncate long text with ellipsis */
+table td, table th {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: table-cell;
+}
+
+/* Column widths for table headers */
+/* ID column */
+table thead th:nth-child(1) {
+  max-width: 100px;
+  width: 100px;
+}
+
+/* First Name column */
+table thead th:nth-child(2) {
+  max-width: 120px;
+  width: 120px;
+}
+
+/* Last Name column */
+table thead th:nth-child(3) {
+  max-width: 120px;
+  width: 120px;
+}
+
+/* Email column */
+table thead th:nth-child(4) {
+  max-width: 180px;
+  width: 180px;
+}
+
+/* Country column */
+table thead th:nth-child(5) {
+  max-width: 120px;
+  width: 120px;
+}
+
+/* ZIP column */
+table thead th:nth-child(6) {
+  max-width: 80px;
+  width: 80px;
+}
+
+/* Details column */
+table thead th:nth-child(7) {
+  max-width: 100px;
+  width: 100px;
+}
+
+/* Column widths for table body cells */
+/* ID column */
+table tbody th:nth-child(1) {
+  max-width: 100px;
+  width: 100px;
+}
+
+/* First Name column */
+table tbody td:nth-child(1) {
+  max-width: 120px;
+  width: 120px;
+}
+
+/* Last Name column */
+table tbody td:nth-child(2) {
+  max-width: 120px;
+  width: 120px;
+}
+
+/* Email column */
+table tbody td:nth-child(3) {
+  max-width: 180px;
+  width: 180px;
+}
+
+/* Country column */
+table tbody td:nth-child(4) {
+  max-width: 120px;
+  width: 120px;
+}
+
+/* ZIP column */
+table tbody td:nth-child(5) {
+  max-width: 80px;
+  width: 80px;
+}
+
+/* Details column */
+table tbody th:nth-child(2) {
+  max-width: 100px;
+  width: 100px;
+}

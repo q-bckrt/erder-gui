@@ -1,1 +1,24 @@
-<p>item-create works!</p>
+<ul class="nav nav-pills flex-column">
+  <h2 class="mt-4">Create Item</h2>
+  <fieldset>
+    <div>
+      <label class="col-form-label mt-4" for="itemUpdateFieldName">Name</label>
+      <input type="text" class="form-control" placeholder="..." id="itemUpdateFieldName">
+    </div>
+    <div>
+      <label class="form-label mt-4" for="itemUpdateFieldDescription">Description</label>
+      <textarea class="form-control" id="itemUpdateFieldDescription" rows="3">...</textarea>
+    </div>
+    <div>
+      <label class="col-form-label mt-4" for="itemUpdateFieldPrice">Price</label>
+      <input type="text" class="form-control" placeholder="..." id="itemUpdateFieldPrice">
+    </div>
+    <div>
+      <label class="col-form-label mt-4" for="itemUpdateFieldStock">Stock</label>
+      <input type="text" class="form-control" placeholder="..." id="itemUpdateFieldStock">
+    </div>
+    <div class="text-end mt-4">
+      <button type="submit" class="btn btn-outline-warning px-5">Add</button>
+    </div>
+  </fieldset>
+</ul>
