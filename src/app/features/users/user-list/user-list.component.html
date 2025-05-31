@@ -12,94 +12,21 @@
     </tr>
     </thead>
     <tbody>
-    <tr class="table-default">
-      <th scope="row">#43894398</th>
-      <td>November</td>
-      <td>Terra</td>
-      <td>nova&#64;starcraft.net</td>
-      <td>Tarsonis</td>
-      <td>4227</td>
-      <th scope="col">
-        <button type="button" class="btn btn-outline-warning btn-sm" routerLink="/users/27">View</button>
-      </th>
-    </tr>
-    <tr class="table-default">
-      <th scope="row">#43894398</th>
-      <td>November</td>
-      <td>Terra</td>
-      <td>nova&#64;starcraft.net</td>
-      <td>Tarsonis</td>
-      <td>4227</td>
-      <th scope="col">
-        <button type="button" class="btn btn-outline-warning btn-sm" routerLink="/users/27">View</button>
-      </th>
-    </tr>
-    <tr class="table-default">
-      <th scope="row">#43894398</th>
-      <td>November</td>
-      <td>Terra</td>
-      <td>nova&#64;starcraft.net</td>
-      <td>Tarsonis</td>
-      <td>4227</td>
-      <th scope="col">
-        <button type="button" class="btn btn-outline-warning btn-sm" routerLink="/users/27">View</button>
-      </th>
-    </tr>
-    <tr class="table-default">
-      <th scope="row">#43894398</th>
-      <td>November</td>
-      <td>Terra</td>
-      <td>nova&#64;starcraft.net</td>
-      <td>Tarsonis</td>
-      <td>4227</td>
-      <th scope="col">
-        <button type="button" class="btn btn-outline-warning btn-sm" routerLink="/users/27">View</button>
-      </th>
-    </tr>
-    <tr class="table-default">
-      <th scope="row">#43894398</th>
-      <td>November</td>
-      <td>Terra</td>
-      <td>nova&#64;starcraft.net</td>
-      <td>Tarsonis</td>
-      <td>4227</td>
-      <th scope="col">
-        <button type="button" class="btn btn-outline-warning btn-sm" routerLink="/users/27">View</button>
-      </th>
-    </tr>
-    <tr class="table-default">
-      <th scope="row">#43894398</th>
-      <td>November</td>
-      <td>Terra</td>
-      <td>nova&#64;starcraft.net</td>
-      <td>Tarsonis</td>
-      <td>4227</td>
-      <th scope="col">
-        <button type="button" class="btn btn-outline-warning btn-sm" routerLink="/users/27">View</button>
-      </th>
-    </tr>
-    <tr class="table-default">
-      <th scope="row">#43894398</th>
-      <td>November</td>
-      <td>Terra</td>
-      <td>nova&#64;starcraft.net</td>
-      <td>Tarsonis</td>
-      <td>4227</td>
-      <th scope="col">
-        <button type="button" class="btn btn-outline-warning btn-sm" routerLink="/users/27">View</button>
-      </th>
-    </tr>
-    <tr class="table-default">
-      <th scope="row">#43894398</th>
-      <td>November</td>
-      <td>Terra</td>
-      <td>nova&#64;starcraft.net</td>
-      <td>Tarsonis</td>
-      <td>4227</td>
-      <th scope="col">
-        <button type="button" class="btn btn-outline-warning btn-sm" routerLink="/users/27">View</button>
-      </th>
-    </tr>
+    @if (users$ | async; as users) {
+      @for (user of users; track user.id) {
+        <tr class="table-default">
+          <th scope="row">#43894398</th>
+          <td>{{ user.firstName }}</td>
+          <td>{{ user.lastName }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.addressDTO.country }}</td>
+          <td>{{ user.addressDTO.zip }}</td>
+          <th scope="col">
+            <button type="button" class="btn btn-outline-warning btn-sm" routerLink="/users/27">View</button>
+          </th>
+        </tr>
+      }
+    }
     </tbody>
   </table>
 </ul>
